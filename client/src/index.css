@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* THEME: Industrial Midnight */
+body {
+  @apply bg-[#0B0E14] text-slate-300 antialiased;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+}
+
+/* The "Tech Grid" Background Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Glass Card Effect */
+.glass-card {
+  @apply bg-[#151923]/80 backdrop-blur-md border border-white/5 shadow-xl;
+}
+
+/* Glowing text for the brand */
+.text-glow {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
